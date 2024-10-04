@@ -3,6 +3,26 @@ body {
 	height: 100%;
 }
 
+#main {
+  margin-top: 86px;
+  margin-left: 86px;
+}
+
+#queue {
+	background-color: #F3F4F6;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E5E7EB;
+  width: 330px;
+}
+
+#player {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E5E7EB;
+  height: 80px;
+}
+
 h1,
 h2,
 h3,
@@ -10,4 +30,95 @@ h4,
 h5,
 h6 {
 	margin: 0;
+	font-family: "Noto Sans";
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 48;
+	line-height: 1.25 / 60px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 16;
+	line-height: 1.5 / 24px;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 16;
+	line-height: 1.5 / 24px;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 14;
+	line-height: 1.5 / 21px;
+}
+
+h5 {
+	font-weight: normal;
+	font-size: 14;
+	line-height: 1.5 / 21px;
+}
+
+h6 {
+	font-weight: normal;
+	font-size: 12;
+	line-height: 1.5 / 18px;
+}
+
+#playlist-info {
+  margin-bottom: 48px;
+  display: flex;
+}
+
+#playlist-details {
+  margin-left: 32px;
+  align-self: flex-end;
+}
+
+#play-next{
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+#empty-queue {
+	color: #9CA3AF;
+  text-align: center;
+}
+
+#deezer-logo {
+	width: 150px;
+	height: 30px;
+  margin-right: 16px;
+}
+
+#playlist-img {
+	width: 250px;
+	height: 250px;
+}
+
+#player-img {
+	width: 79px;
+	height: 79px;
+  margin-right: 16px;
+}
+
+.song {
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+
+.buttons {
+	width: 40px;
+	height: 40px;
+}
+
+#pause-btn {
+  margin-left: 32px;
+  margin-right: 32px;
 }
