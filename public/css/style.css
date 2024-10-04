@@ -1,26 +1,7 @@
+/* global settings */
 html,
 body {
 	height: 100%;
-}
-
-#main {
-  margin-top: 86px;
-  margin-left: 86px;
-}
-
-#queue {
-	background-color: #F3F4F6;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #E5E7EB;
-  width: 330px;
-}
-
-#player {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #E5E7EB;
-  height: 80px;
 }
 
 h1,
@@ -71,6 +52,36 @@ h6 {
 	line-height: 1.5 / 18px;
 }
 
+/* section properties */
+#deezer-body {
+
+}
+
+#main {
+  margin-top: 86px;
+  margin-left: 86px;
+  margin-right: 86px;
+}
+
+#queue {
+	background-color: #F3F4F6;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E5E7EB;
+  width: 330px;
+
+}
+
+#player {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #E5E7EB;
+  height: 80px;
+  margin-top: auto;
+
+}
+
+/* item properties */
 #playlist-info {
   margin-bottom: 48px;
   display: flex;
@@ -78,7 +89,6 @@ h6 {
 
 #playlist-details {
   margin-left: 32px;
-  align-self: flex-end;
 }
 
 #play-next{
