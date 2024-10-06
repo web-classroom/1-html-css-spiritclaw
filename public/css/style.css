@@ -4,17 +4,31 @@ body {
   height: 100%;
 }
 
+:root {
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-400: #9CA3AF;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
 }
 
-h1 {
+/* Define default text values */
+body#deezer-body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* text properties */
+.title {
   font-weight: bold;
   font-size: 48px;
   line-height: 1.25;
@@ -22,34 +36,24 @@ h1 {
   margin-bottom: 8px;
 }
 
-h2 {
+.subtitle-1 {
   font-weight: bold;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
-h3 {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.5;
+.body-1 {
 }
 
-h4 {
+.subtitle-2 {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.5;
 }
 
-h5 {
-  font-weight: normal;
+.body-2 {
   font-size: 14px;
-  line-height: 1.5;
 }
 
-h6 {
-  font-weight: normal;
+.overline {
   font-size: 12px;
-  line-height: 1.5;
 }
 
 /* section properties */
@@ -76,7 +80,7 @@ h6 {
 #player {
   border-style: solid;
   border-width: 1px;
-  border-color: #E5E7EB;
+  border-color: var(--gray-200);
   height: 80px;
   margin-top: auto;
   display: flex;
@@ -84,10 +88,10 @@ h6 {
 }
 
 #queue {
-  background-color: #F3F4F6;
+  background-color: var(--gray-100);
   border-style: solid;
   border-width: 1px;
-  border-color: #E5E7EB;
+  border-color: var(--gray-200);
   width: 330px;
   display: flex;
   flex-direction: column;
@@ -111,16 +115,16 @@ h6 {
 }
 
 #button-list {
-  position: absolute;
-  left: 50%;
-
+  flex-grow: 0;
 }
 
 #deezer-section{
   display: flex;
   flex-direction: column;
-  margin-right: 16px;
-  margin-left: auto;
+  align-items: end;
+  flex-grow: 1;
+  width: 150px;
+  height: 30px;
 }
 
 #queue-list {
@@ -136,18 +140,21 @@ h6 {
 }
 
 #empty-queue {
-  color: #9CA3AF;
+  color: var(--gray-400);
   text-align: center;
   align-self: center;
+  position: absolute;
 }
 
 #deezer-logo {
   width: 150px;
   height: 30px;
+  margin-right: 16px;
 }
 
 #player-div {
   display: flex;
+  flex-grow: 1;
 }
 
 #playlist-img {
@@ -174,4 +181,8 @@ h6 {
 #pause-btn {
   margin-left: 32px;
   margin-right: 32px;
+}
+
+#powered-by {
+  margin-right: 16px;
 }
