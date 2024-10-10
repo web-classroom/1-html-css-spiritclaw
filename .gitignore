@@ -3,3 +3,6 @@ npm-debug.log
 .idea
 /cypress/videos/
 /cypress/screenshots/
+
+# Macos files
+.DS_Store

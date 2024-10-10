@@ -95,6 +95,8 @@ body#deezer-body {
   width: 330px;
   display: flex;
   flex-direction: column;
+  position: relative
+
 }
 
 /* item properties */
@@ -116,15 +118,23 @@ body#deezer-body {
 
 #button-list {
   flex-grow: 0;
+  display: flex;
+
 }
 
 #deezer-section{
   display: flex;
+  flex-direction: row;
+  align-items: end;
+  flex-grow: 1;
+  width: 50%;
+}
+
+#deezer-section-2 {
+  display: flex;
   flex-direction: column;
   align-items: end;
   flex-grow: 1;
-  width: 150px;
-  height: 30px;
 }
 
 #queue-list {
@@ -144,6 +154,9 @@ body#deezer-body {
   text-align: center;
   align-self: center;
   position: absolute;
+  top: 50%; /* Position halfway from the top */
+  left: 50%; /* Position halfway from the left */
+  transform: translate(-50%, -50%)
 }
 
 #deezer-logo {
@@ -155,6 +168,7 @@ body#deezer-body {
 #player-div {
   display: flex;
   flex-grow: 1;
+  width: 50%;
 }
 
 #playlist-img {
