@@ -106,39 +106,41 @@ body#deezer-body {
   display: flex;
 }
 
-#playlist-details {
+#playlist-info > div {
   margin-left: 32px;
   align-self: flex-end;
 }
 
-#current-song {
+#player-img + div {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
 
-#button-list {
-  flex-grow: 0;
+.player-div {
   display: flex;
-
-}
-
-#deezer-section{
-  display: flex;
-  flex-direction: row;
-  align-items: end;
   flex-grow: 1;
   width: 50%;
 }
 
-#deezer-section-2 {
+#deezer-section{
+  flex-direction: row;
+  align-items: end;
+}
+
+#deezer-section > div {
   display: flex;
   flex-direction: column;
   align-items: end;
   flex-grow: 1;
 }
 
-#queue-list {
+#button-list {
+  flex-grow: 0;
+  display: flex;
+}
+
+#queue > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,16 +162,10 @@ body#deezer-body {
   transform: translate(-50%, -50%)
 }
 
-#deezer-logo {
+#deezer-img {
   width: 150px;
   height: 30px;
   margin-right: 16px;
-}
-
-#player-div {
-  display: flex;
-  flex-grow: 1;
-  width: 50%;
 }
 
 #playlist-img {
@@ -188,7 +184,7 @@ body#deezer-body {
   margin-left: 16px;
 }
 
-.buttons {
+.button {
   width: 40px;
   height: 40px;
 }
