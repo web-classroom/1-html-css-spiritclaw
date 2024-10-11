@@ -98,7 +98,7 @@ body#deezer-body {
   display: flex;
   flex-direction: column;
   /* used to better position it within the queue without
-  needing to recalculate something that includes the placer height */
+  needing to recalculate something that includes the player height */
   position: relative
 
 }
@@ -141,6 +141,12 @@ body#deezer-body {
   width: 50%;
 }
 
+#player-img {
+  width: 79px;
+  height: 79px;
+  margin-right: 16px;
+}
+
 #player-img + div {
   display: flex;
   flex-direction: column;
@@ -166,32 +172,25 @@ body#deezer-body {
   align-items: end;
 }
 
-#powered-by {
-  margin-right: 16px;
-  align-self: flex-start;
-}
-
-
-#button-list {
-  flex-grow: 0;
-  display: flex;
-}
-
 #deezer-img {
   width: 150px;
   height: 30px;
   margin-right: 16px;
 }
 
+#powered-by {
+  margin-right: 16px;
+  align-self: flex-start;
+}
+
+#button-list {
+  flex-grow: 0;
+  display: flex;
+}
+
 #playlist-img {
   width: 250px;
   height: 250px;
-}
-
-#player-img {
-  width: 79px;
-  height: 79px;
-  margin-right: 16px;
 }
 
 .song {
