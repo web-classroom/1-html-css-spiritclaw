@@ -160,6 +160,18 @@ body#deezer-body {
   flex-grow: 1;
 }
 
+#deezer-section > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#powered-by {
+  margin-right: 16px;
+  align-self: flex-start;
+}
+
+
 #button-list {
   flex-grow: 0;
   display: flex;
@@ -195,8 +207,4 @@ body#deezer-body {
 #pause-btn {
   margin-left: 32px;
   margin-right: 32px;
-}
-
-#powered-by {
-  margin-right: 16px;
 }
