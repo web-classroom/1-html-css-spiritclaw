@@ -30,7 +30,7 @@ body#deezer-body {
 /* text properties */
 .title {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 1.25;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -41,19 +41,20 @@ body#deezer-body {
 }
 
 .body-1 {
+  font-size: 1rem;
 }
 
 .subtitle-2 {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .body-2 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .overline {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /* section properties */
