@@ -57,7 +57,7 @@ body#deezer-body {
   font-size: 0.75rem;
 }
 
-/* section properties */
+/* layout properties */
 #deezer-body {
   display: flex;
   flex-direction: column;
@@ -94,13 +94,37 @@ body#deezer-body {
   border-width: 1px;
   border-color: var(--gray-200);
   width: 330px;
+  min-width: 330px;
   display: flex;
   flex-direction: column;
+  /* used to better position it within the queue without
+  needing to recalculate something that includes the placer height */
   position: relative
 
 }
 
-/* item properties */
+#queue > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#queue > p {
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+#queue div p {
+  color: var(--gray-400);
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 #playlist-info {
   margin-bottom: 48px;
   display: flex;
@@ -111,19 +135,20 @@ body#deezer-body {
   align-self: flex-end;
 }
 
-#player-img + div {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-
 .player-div {
   display: flex;
   flex-grow: 1;
   width: 50%;
 }
 
-#deezer-section{
+#player-img + div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+}
+
+#deezer-section {
   flex-direction: row;
   align-items: end;
 }
@@ -138,28 +163,6 @@ body#deezer-body {
 #button-list {
   flex-grow: 0;
   display: flex;
-}
-
-#queue > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-#play-next{
-  margin-top: 32px;
-  margin-left: 32px;
-}
-
-#empty-queue {
-  color: var(--gray-400);
-  text-align: center;
-  align-self: center;
-  position: absolute;
-  top: 50%; /* Position halfway from the top */
-  left: 50%; /* Position halfway from the left */
-  transform: translate(-50%, -50%)
 }
 
 #deezer-img {
